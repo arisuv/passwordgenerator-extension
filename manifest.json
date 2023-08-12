@@ -14,6 +14,15 @@
   ],
 
 
+ "browser_specific_settings": {
+  "gecko": {
+    "id": "passwordgeneration@extension.org",
+    "strict_min_version": "52.0"
+  }
+},
+
+
+
    "icons": {
   "48": "assets/icon/icon-48.png",
   "96": "assets/icon/icon-96.png"
