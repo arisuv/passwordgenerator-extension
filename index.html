@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="popup-window">
+        <div class="heading  ">
+            <div class="title ">Password Generator</div>
+            <div class="versionStyle">Version: 1.0.0</div>
+            <div class="source"><input class="github-icon icon" id="github" type="button"></input></div>
+        </div>
+        <div class="password-box">
+                <input id="generated-password" class="password" type="text" value=""></input>
+                <div class="control-options ">
+                    <input class="copy-icon icon" id="copyIcon" type="button"></input>
+                   <input class="generate-icon icon" id="generateIcon" type="button"></input>
+                </div> 
+        </div>
+        <section class="prefrences">
+            <div class="password-length-box">
+                <section>
+                    <span class="inline-block"><p class="password-length-text">Password length:   </p></span>
+                    <span class="inline-block">
+                        <input type="number" name="length" id="password-length-number" class="password-digits-length" min="8" max="64" value="8">
+                    </span>
+                </section>
+                <input type="range" name="length" min="8" max="64"  value="8" class="length-slider" id="password-length-slider">
+            </div>
+            <div class="password-options">
+                 <form class="checkbox-options">
+                  <input type="checkbox" id="uppercase" name="uppercase" value="uppercase" checked>
+                  <label for="uppercase" title="ABC"> Uppercase</label><br>
+                  <input type="checkbox" id="lowercase" name="lowercase" value="lowercase" checked>
+                  <label for="lowercase" title="abc"> Lowercase</label><br>
+                  <input type="checkbox" id="number" name="number" value="number" checked>
+                  <label for="number" title="123"> Number</label><br>
+                  <input type="checkbox" id="symbol" name="symbol" value="symbol" checked>
+                  <label for="symbol" title="@&%"> Symbol</label><br>
+                  <input type="button" value="Select All" class="selectall-button" id="selectAll">
+                </form> 
+            </div>
+        </section>
+        <div class="bottom">
+            <input type="button" id="copyButton" value="Copy" class="copy-button"></input>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
+

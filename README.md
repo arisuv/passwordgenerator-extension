@@ -1,2 +1,2 @@
-# passwordgenerator-extension
-Password generator cross -browser web extension
+# password Generator
+cross-browser Password generator web extension

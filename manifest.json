@@ -1,0 +1,39 @@
+{
+
+	"manifest_version": 3,
+	"version":"0.1.0",
+	"name": "Password Generator",
+
+
+   "permissions": [
+    "contextMenus",
+    "activeTab",
+    "clipboardWrite",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+
+
+   "icons": {
+  "48": "assets/icon/icon-48.png",
+  "96": "assets/icon/icon-96.png"
+  },
+
+
+    "action": {
+    "default_title": "Password Generator",
+    "default_popup": "index.html"
+  },
+
+    "content_scripts": [
+    {
+      "js": ["script/script.js"],
+      "matches": [
+        "https://developer.chrome.com/docs/extensions/*",
+        "https://developer.chrome.com/docs/webstore/*"
+      ]
+    }
+  ]
+ 
+ 
+}
