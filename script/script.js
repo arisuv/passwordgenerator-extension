@@ -3,10 +3,10 @@ var copyIcon = document.getElementById("copyIcon");
 
 var generateIcon = document.getElementById("generateIcon");
 
-var passwordLength = document.getElementById("password-length-number"); //pass length
+var passwordLength = document.getElementById("password-length-number"); //password length controller
 var slider = document.getElementById("password-length-slider");
 
-var length; // default value is 8 from number input & slider
+var length; // password length default value is 8 from number input & slider
 
 var selectAll = document.getElementById("selectAll");
 
@@ -14,12 +14,10 @@ var password = document.getElementById("generated-password");
 
 var sourceRedirection = document.getElementById("github");
 
-
 const uppercaseList = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const lowercaseList = 'abcdefghijklmnopqrstuvwxyz';
 const numberList = '0123456789';
 const symbollist = '!@#$%^&*';
-
 
 var uppercase = document.getElementById("uppercase");
 var lowercase =  document.getElementById("lowercase");
@@ -27,8 +25,7 @@ var number = document.getElementById("number");
 var symbol = document.getElementById("symbol");
 
 
-document.addEventListener("DOMContentLoaded", autoGenerate);
-
+document.addEventListener("DOMContentLoaded", autoGenerate); // auto generate password on page load
 
 copyButton.addEventListener("click", copyPassword);
 copyIcon.addEventListener("click", copyPassword);
@@ -89,7 +86,7 @@ function passwordResult(length)
 
     const charactersLength = characters.length;
     let counter = 0;
-    
+
     while (counter < length) {
       result += characters.charAt(Math.floor(Math.random() * charactersLength));
       counter += 1;
@@ -97,7 +94,6 @@ function passwordResult(length)
     return result;
 
 }
-
 
 function sliderUpdateLength() 
 {
@@ -170,5 +166,5 @@ function selectAllBoxes()
 
 function githubRedirection()
 {
- window.open("https://github.com/"); //sorcecode
+ window.open("https://github.com/arisuv/passwordgenerator-extension"); //sorcecode
 }
