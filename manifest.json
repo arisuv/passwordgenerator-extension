@@ -1,7 +1,7 @@
 {
 
 	"manifest_version": 3,
-	"version":"0.1.0",
+	"version":"0.1.1",
 	"name": "Password Generator",
 
 
@@ -13,7 +13,7 @@
  "browser_specific_settings": {
   "gecko": {
     "id": "passwordgeneration@extension.org",
-    "strict_min_version": "52.0"
+    "strict_min_version": "109.0"
   }
 },
 
