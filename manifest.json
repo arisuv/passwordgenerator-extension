@@ -7,7 +7,6 @@
 
    "permissions": [
     "contextMenus",
-    "activeTab",
     "clipboardWrite",
     "webRequest",
     "webRequestBlocking"
